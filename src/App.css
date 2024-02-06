@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Hind';
+}
+
+.Navbar {
+  height: 15vh;
+  background-color: rgb(3, 3, 49);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.routing {
+  color: white;
+  margin-right: 10px;
+  margin-left: 20px;
+  font-size: 2vw;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.loginPage h1 {
+  text-align: center;
+  margin-top: 10vh;
+  margin-bottom: 2vh;
+  font-size: 4vw;
+}
+
+.loginPage .google {
+  margin-left: 34vw;
+  background-color: #4285F4;
+  color: #ffffff;
+  padding: 2vh 3vw;
+  font-size: 3vw;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.logoutButton {
+  margin-left: auto;
+  margin-right: 3vw;
+  height: 10vh;
+  width: 10vw;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 1.5vw;
+  font-weight: 800;
+  color: black;
+  cursor: pointer;
+}
+
+.logoutButton:hover {
+  background-color: rgb(18, 18, 110);
+  color: white;
+}
+
+.createPost {
+  width: 80vw;
+  background-color: rgb(3, 3, 49);
+  margin: auto;
+  margin-top: 5vh;
+  padding: 3vh;
+}
+
+.createPost h1 {
+  margin-bottom: 3vh;
+  color: white;
+  font-size: 3vw;
+}
+
+.cpContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputtext {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3vh;
+}
+
+.inputtext label {
+  color: white;
+  font-size: 2vw;
+  margin-bottom: 1vh;
+}
+
+.inputtext input,
+.inputtext textarea {
+  width: 100%;
+  padding: 1vh;
+  font-size: 1.5vw;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.inputtext textarea {
+  height: 20vh;
+}
+
+.createPost button {
+  width: 10vw;
+  height: 10vh;
+  border-radius: 10px;
+  font-size: 1.5vw;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* For desktop: */
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.homePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.post {
+  position: relative;
+  width: 500px;
+  margin-left: 400px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 15px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  background-color: #bfdcf3;
+}
+
+.post .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.post .title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-right: 10px;
+}
+
+.post .delete button {
+  background-color: #ff6464;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.post .delete button:hover {
+  background-color: #cc0000;
+}
+
+.post .postTextContainer {
+  font-size: 1.2rem;
+  color: #000000;
+}
+
+.post h3 {
+  font-size: 1rem;
+  color: #000000;
+  margin-top: 10px;
+}
+
+.editPage {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .post {
+    width: 100%;
+    margin-left: 0;
+  }
+}
